@@ -27,14 +27,14 @@ jobs:
     - name: Check out source
       uses: actions/checkout@v1
 
-    - name: vet
+    - name: Run Go Vet
       run: go vet -v ./...
 
-    - name: golangci-lint
+    - name: Run golangci-lint
       uses: golangci/golangci-lint-action@v2
     
-    - name: test
+    - name: Run Go Tests
       run: POSTGRES_CONNECTION=postgres://postgres:password@postgres:5432/postgres go test ./... -v -cover -covermode=count -coverprofile=coverage.out 
     
-    - name: upload coverage
+    - name: Upload Coverage
       uses: codecov/codecov-action@v1
