@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres:13
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=password
+  pgq:
+    build:
+      context: .
+    command: "go test ./... -v"
+    environment:
+      - POSTGRES_CONNECTION=postgres://postgres:password@postgres:5432/postgres
+    depends_on:
+    - postgres
