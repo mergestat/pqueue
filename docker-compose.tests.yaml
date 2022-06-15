@@ -10,7 +10,7 @@ services:
   pgq:
     build:
       context: .
-    command: "go test ./... -v"
+    command: "go test ./... -v -cover -covermode=count -coverprofile=coverage.out"
     environment:
       - POSTGRES_CONNECTION=postgres://postgres:password@postgres:5432/postgres
     depends_on:
