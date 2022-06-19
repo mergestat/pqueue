@@ -3,7 +3,7 @@ package ddl_test
 import (
 	"testing"
 
-	"github.com/mergestat/pgq/ddl"
+	"github.com/mergestat/pqueue/ddl"
 	pg_query "github.com/pganalyze/pg_query_go"
 )
 

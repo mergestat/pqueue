@@ -7,10 +7,10 @@ services:
       - 5432:5432
     environment:
       - POSTGRES_PASSWORD=password
-  pgq:
+  pqueue:
     build:
       context: .
-    command: "go test ./... -v -cover -covermode=count -coverprofile=coverage.out"
+    command: "go test ./... -v -cover -covermode=count"
     environment:
       - POSTGRES_CONNECTION=postgres://postgres:password@postgres:5432/postgres
     depends_on:

@@ -7,7 +7,7 @@ build-tests:
 	docker-compose -f docker-compose.tests.yaml build
 
 run-tests:
-	docker-compose -f docker-compose.tests.yaml run pgq
+	docker-compose -f docker-compose.tests.yaml run pqueue
 
 clean-tests:
 	docker-compose -f docker-compose.tests.yaml down --remove-orphans

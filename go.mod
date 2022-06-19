@@ -1,4 +1,4 @@
-module github.com/mergestat/pgq
+module github.com/mergestat/pqueue
 
 go 1.18
 

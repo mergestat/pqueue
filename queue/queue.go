@@ -10,8 +10,8 @@ import (
 	"github.com/jackc/pgx/v4"
 	"github.com/jackc/pgx/v4/pgxpool"
 	"github.com/lib/pq"
-	"github.com/mergestat/pgq/ddl"
-	"github.com/mergestat/pgq/introspect"
+	"github.com/mergestat/pqueue/ddl"
+	"github.com/mergestat/pqueue/introspect"
 )
 
 type Queue struct {

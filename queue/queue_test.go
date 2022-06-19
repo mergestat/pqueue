@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/jackc/pgx/v4/pgxpool"
-	"github.com/mergestat/pgq/queue"
+	"github.com/mergestat/pqueue/queue"
 )
 
 var (
