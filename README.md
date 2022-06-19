@@ -7,7 +7,7 @@ Golang library for using Postgres as a generic job queue.
 Often, async job queues are implemented using systems like Redis or RabbitMQ.
 However, people have found success using PostgreSQL as the data layer for queue implementations, which has some nice benefits:
 
-1. No additional operational overhead if you're already using postgres as an RDMS for your application
+1. No additional operational overhead if you're already using postgres as an RDBMS for your application
 2. The ability to perform robust analytical queries over queue history, that may be easily joined with other data in postgres
 
 
